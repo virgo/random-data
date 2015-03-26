@@ -11,10 +11,9 @@ import static hu.virgo.randomdata.date.LocalDateGenerator.givenLocalDate;
 public class LocalDateGeneratorSpec {
     static {
         describe(
-                "a local date", it -> it.requires(100)
-                        .example(givenLocalDate())
-                        .toShow("is not empty", (expect, localdate) -> expect.that(localdate).isNotNull())
+            "a local date", it -> it.requires(100)
+                .example(givenLocalDate())
+                .toShow("is not empty", (expect, localDate) -> expect.that(localDate).isNotNull())
         );
-
     }
 }
