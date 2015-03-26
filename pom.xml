@@ -43,6 +43,11 @@
             <version>${junit.version}</version>
         </dependency>
         <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.10</version>
+        </dependency>
+        <dependency>
             <groupId>com.insightfullogic</groupId>
             <artifactId>lambda-behave</artifactId>
             <version>${lambda-behave.version}</version>

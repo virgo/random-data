@@ -16,9 +16,12 @@ public class LocalDateGenerator implements Generator<LocalDate> {
             alteration *= -1;
 
         int year = thisYear + alteration;
-        int day = source.generateInt(367);
+        int day = 1 + source.generateInt(365);
 
         return LocalDate.ofYearDay(year, day);
     }
 
+    public static LocalDateGenerator givenLocalDate()  {
+        return new LocalDateGenerator();
+    }
 }
